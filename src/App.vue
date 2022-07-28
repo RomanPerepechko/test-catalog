@@ -1,17 +1,11 @@
 <template>
-  <div @wheel="toggleSeacrh" class="container">
+  <div @scroll="toggleSeacrh" class="container">
 
-    <filter-block 
-    :isShort="isShort"
-    >
+    <filter-block :isShort="isShort">
 
     </filter-block>
 
-    <offer-block 
-    v-for="block in blocks" 
-    :key="block.id" 
-    :name="block.name" 
-    :offers="block.offers">
+    <offer-block v-for="block in blocks" :key="block.id" :name="block.name" :offers="block.offers">
 
     </offer-block>
 
@@ -29,10 +23,19 @@ export default {
     OfferBlock,
     FilterBlock
   },
+  created() {
+    this.positionY = window.scrollY;
+    console.log(this.positionY)
+    window.addEventListener('scroll', this.toggleSeacrh);
 
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.toggleSeacrh);
+  },
   data() {
     return {
       isShort: false,
+      positionY: null,
       blocks: [
         {
           id: 1,
@@ -84,12 +87,13 @@ export default {
 
   methods: {
 
-    toggleSeacrh(ev) {
-      if (ev.deltaY < 0) {
+    toggleSeacrh() {
+      if (this.positionY >= window.scrollY) {
         this.isShort = false;
       } else {
         this.isShort = true;
       }
+      this.positionY =  window.scrollY;
     }
 
   }
