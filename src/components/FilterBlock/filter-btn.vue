@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .filter-btn {
     height: 36px;
-    min-width: 100px;
+    min-width: 150px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgb(0 0 0 / 10%);
     margin: 8px;

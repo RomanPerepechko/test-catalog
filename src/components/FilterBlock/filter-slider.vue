@@ -11,11 +11,11 @@ export default {
     data() {
         return {
             filters: [
-                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
-                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
-                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
-                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
-                { id: 1, name: 'test', icon: 'test.svg', isSelect: false }
+                { id: 1, name: 'Подборки', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'Все категории', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'Где поесть', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'Где сэкономить', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'Где отдохнуть', icon: 'test.svg', isSelect: false }
             ]
         }
     },
