@@ -109,12 +109,6 @@ export default {
       this.positionY = window.scrollY;
     }
 
-  },
-
-  computed: {
-    isShow: function () {
-      return this.isShort || !this.positionY === 0
-    }
   }
 
 }
