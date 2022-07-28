@@ -2,7 +2,7 @@
 
     <div class="search-input">
 
-        <input type="text" placeholder="Поиск по всем категориям">
+        <input placeholder="Поиск по всем категориям">
         
         <div class="search-input__icon">
             <img src="@/assets/search-icon.svg" alt="">
