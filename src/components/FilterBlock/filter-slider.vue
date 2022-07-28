@@ -11,11 +11,11 @@ export default {
     data() {
         return {
             filters: [
-                { id: 1, name: 'test', icon: 'test', isSelect: false },
-                { id: 1, name: 'test', icon: 'test', isSelect: false },
-                { id: 1, name: 'test', icon: 'test', isSelect: false },
-                { id: 1, name: 'test', icon: 'test', isSelect: false },
-                { id: 1, name: 'test', icon: 'test', isSelect: false }
+                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'test', icon: 'test.svg', isSelect: false },
+                { id: 1, name: 'test', icon: 'test.svg', isSelect: false }
             ]
         }
     },
