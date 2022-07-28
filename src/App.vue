@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <filter-block :isShort="isShort">
+    <filter-block :isShort="isShow">
 
     </filter-block>
 
@@ -98,9 +98,15 @@ export default {
       } else {
         this.isShort = true;
       }
-      this.positionY =  window.scrollY;
+      this.positionY = window.scrollY;
     }
 
+  },
+
+  computed: {
+    isShow: function () {
+      return this.isShort || !this.positionY === 0
+    }
   }
 
 }
