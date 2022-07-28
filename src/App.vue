@@ -93,6 +93,10 @@ export default {
   methods: {
 
     toggleSeacrh() {
+      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        this.isShort = true;
+        return
+      }
       if (window.scrollY <= 0) {
         this.isShort = false;
         return
