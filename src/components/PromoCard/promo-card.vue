@@ -3,7 +3,7 @@
     <div class="promo-card">
 
         <div class="promo-card__img">
-            <img src="@/assets/image.jpg" alt="" class="">
+            <img :src="require(`@/assets/${offer.img}`)" alt="" class="">
             <div class="promo-card__rating">{{ offer.rating.value }}({{ offer.rating.count }})</div>
             <div class="promo-card__sticker-discount">{{ offer.sticker }}</div>
         </div>
