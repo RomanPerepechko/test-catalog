@@ -21,11 +21,15 @@
 <script>
 import FilterBlock from '@/components/FilterBlock/filter-block.vue';
 import OfferBlock from '@/components/OfferBlock/offer-block.vue';
+import '@/assets/style.scss';
+
 export default {
+
   components: {
     OfferBlock,
     FilterBlock
   },
+
   data() {
     return {
       isShort: false,
@@ -77,6 +81,7 @@ export default {
       ]
     }
   },
+
   methods: {
 
     toggleSeacrh(ev) {
@@ -93,17 +98,4 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0px;
-  padding: 0px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
 </style>
