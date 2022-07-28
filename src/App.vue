@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <filter-block :isShort="isShow">
+    <filter-block :isShort="isShort">
 
     </filter-block>
 
@@ -93,6 +93,10 @@ export default {
   methods: {
 
     toggleSeacrh() {
+      if (window.scrollY <= 0) {
+        this.isShort = false;
+        return
+      }
       if (this.positionY >= window.scrollY) {
         this.isShort = false;
       } else {
