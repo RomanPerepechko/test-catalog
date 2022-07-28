@@ -1,5 +1,5 @@
 <template>
-  <div @scroll="toggleSeacrh" class="container">
+  <div class="container">
 
     <filter-block :isShort="isShort">
 
@@ -23,15 +23,20 @@ export default {
     OfferBlock,
     FilterBlock
   },
+
   created() {
+
     this.positionY = window.scrollY;
-    console.log(this.positionY)
     window.addEventListener('scroll', this.toggleSeacrh);
 
   },
+
   unmounted() {
+
     window.removeEventListener('scroll', this.toggleSeacrh);
+
   },
+
   data() {
     return {
       isShort: false,
