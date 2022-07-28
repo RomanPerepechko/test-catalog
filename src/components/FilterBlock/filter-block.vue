@@ -1,6 +1,6 @@
 <template>
 
-    <div class="filter-block" :style="isShort ? 'height:70px;' : null">
+    <div class="filter-block" :class="{show: isShort}" >
 
         <search-input></search-input>
 

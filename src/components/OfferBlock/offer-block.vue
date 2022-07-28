@@ -8,7 +8,16 @@
         </div>
         
         <div class="offer-block__slider">
-            <promo-card @toggle-favorite="()=>{offer.isFavorite = !offer.isFavorite}" v-for="offer in offers" :key="offer.id" :offer="offer"></promo-card>
+
+            <promo-card 
+            @toggle-favorite="()=>{offer.isFavorite = !offer.isFavorite}" 
+            v-for="offer in offers" 
+            :key="offer.id" 
+            :offer="offer"
+            >
+            
+            </promo-card>
+
         </div>
 
     </div>

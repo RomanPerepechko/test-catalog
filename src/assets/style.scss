@@ -193,10 +193,25 @@
         color: #C5C0C0;
 
         img {
+
             height: 16px;
             width: 16px;
+
+        }
+
+        &.toggle {
+
+            background-color:#30d5c8;
+            color:#fff;
+
         }
 
     }
-    
+
+    &.show {
+
+        height: 70px;
+
+    }
+
 }
